@@ -1,0 +1,23 @@
+{
+	"carousel": [
+		{"file_name": "template", "title": "Lorem Ipsum", "img": "/img/carousel-1.jpg"},
+		{"file_name": "template", "title": "Lorem Ipsum", "img": "/img/carousel-2.jpg"},
+		{"file_name": "template", "title": "Lorem Ipsum", "img": "/img/carousel-3.jpg"}
+	],
+
+	"article_stubs": [
+		{"file_name": "template", "title": "Article stub", "intro": "Lorem Ipsum yadda yadda", "img": "/img/blog-1.jpg"},
+		{"file_name": "template", "title": "Article stub", "intro": "Lorem Ipsum yadda yadda", "img": "/img/blog-1.jpg"}
+	],
+
+	"navbar": [
+		{"file_name": "template", "title": "Article stub"},
+		{"file_name": "template", "title": "Article stub"}
+	],
+
+	"contact": {
+		"Address": "123 Street, New York, USA",
+		"Phone": "+012 345 6789",
+		"Email": "info@example.com"
+	}
+}
