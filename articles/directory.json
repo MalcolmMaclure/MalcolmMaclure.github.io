@@ -1,23 +1,23 @@
 {
 	"carousel": [
-		{"file_name": "template", "title": "Lorem Ipsum", "img": "/img/carousel-1.jpg"},
-		{"file_name": "template", "title": "Lorem Ipsum", "img": "/img/carousel-2.jpg"},
-		{"file_name": "template", "title": "Lorem Ipsum", "img": "/img/carousel-3.jpg"}
+		{"file_name": "template", "title": "Case-crossover", "img": "/img/carousel-1.jpg"},
+		{"file_name": "template", "title": "My Climate Clan", "img": "/img/carousel-2.jpg"},
+		{"file_name": "template", "title": "Meeting Wisely", "img": "/img/carousel-3.jpg"}
 	],
 
 	"article_stubs": [
-		{"file_name": "template", "title": "Article stub", "intro": "Lorem Ipsum yadda yadda", "img": "/img/blog-1.jpg"},
-		{"file_name": "template", "title": "Article stub", "intro": "Lorem Ipsum yadda yadda", "img": "/img/blog-1.jpg"}
+		{"file_name": "template", "title": "MIAW", "intro": "Most ideas are wrong...", "img": "/img/blog-1.jpg"},
+		{"file_name": "template", "title": "Modern Satyagraha", "intro": "Scientific approaches to social action", "img": "/img/blog-1.jpg"}
 	],
 
 	"navbar": [
-		{"file_name": "template", "title": "Article stub"},
-		{"file_name": "template", "title": "Article stub"}
+		{"file_name": "template", "title": "MIAW"},
+		{"file_name": "template", "title": "Modern Satyagraha"}
 	],
 
 	"contact": {
-		"Address": "123 Street, New York, USA",
-		"Phone": "+012 345 6789",
-		"Email": "info@example.com"
+		"Address": "210-1110 Govt St, Victoria BC, V8W 1Y2",
+		"Phone": "to be added",
+		"Email": "macluremalcolm1@gmail.com"
 	}
 }
