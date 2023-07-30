@@ -1,8 +1,8 @@
 {
 	"carousel": [
-		{"file_name": "template", "title": "Case-crossover", "img": "/img/carousel-1.jpg"},
-		{"file_name": "template", "title": "My Climate Clan", "img": "/img/carousel-2.jpg"},
-		{"file_name": "template", "title": "Meeting Wisely", "img": "/img/carousel-3.jpg"}
+		{"file_name": "template", "title": "Case-crossover", "img": "/img/Case-Crossover car crash.jpg"},
+		{"file_name": "template", "title": "My Climate Clan", "img": "/img/My Climate Clan grid.jpg"},
+		{"file_name": "template", "title": "Meeting Wisely", "img": "/img/IACTE logo for carousel.jpg"}
 	],
 
 	"article_stubs": [
