@@ -1,18 +1,20 @@
 {
 	"carousel": [
-		{"file_name": "template", "title": "Case-crossover", "img": "/img/Case-Crossover car crash.jpg"},
+		{"file_name": "template", "title": "Case-crossover study design", "img": "/img/Case-Crossover car crash.jpg"},
 		{"file_name": "template", "title": "My Climate Clan", "img": "/img/My Climate Clan grid.jpg"},
 		{"file_name": "template", "title": "Meeting Wisely", "img": "/img/IACTE logo for carousel.jpg"}
 	],
 
 	"article_stubs": [
 		{"file_name": "template", "title": "MIAW", "intro": "Most ideas are wrong...", "img": "/img/blog-1.jpg"},
-		{"file_name": "template", "title": "Modern Satyagraha", "intro": "Scientific approaches to social action", "img": "/img/blog-1.jpg"}
+		{"file_name": "template", "title": "Scientific Social Action", "intro": "Extending Gandhi's 'Satyagraha' Experiments", "img": "/img/blog-1.jpg"}
+		{"file_name": "template", "title": "Meeting Wisely", "intro": "Boosting low-carbon virtual travel.", "img": "/img/blog-1.jpg"}
 	],
 
 	"navbar": [
 		{"file_name": "template", "title": "MIAW"},
-		{"file_name": "template", "title": "Modern Satyagraha"}
+		{"file_name": "template", "title": "Sci Social Action"}
+		{"file_name": "template", "title": "Meeting Wisely"}
 	],
 
 	"contact": {
