@@ -60,7 +60,7 @@
 	1. It should show a status of `Running (1/1)`. This means its working.
 	2. Whenever you shut down your computer, this local site will shut down, and you'll have to open Docker Desktop, and click the start button to start it back up.
 	
-	![](https://malcolmmaclure.github.io/readme_img/start_container.jpg)
+![](https://malcolmmaclure.github.io/readme_img/start_container.jpg)
 8. You should now be able to see the site by going to any web-browser and entering `localhost:8000` into the address bar.
 9. All the images and HTML files for the site will have been downloaded into the empty folder you chose in step 4, and any changes you make to those files will imediately be reflected on localhost:8000.
 
@@ -110,8 +110,8 @@ Take note of some special image names:
 
 Image File Name | Description
 ------------- | -------------
-	profile.jpg | The picture that appears on the left of every page.
-	favicon.ico | The small image that appears in the browser tab.
+profile.jpg | The picture that appears on the left of every page.
+favicon.ico | The small image that appears in the browser tab.
 
 
 ## HTML resourses
