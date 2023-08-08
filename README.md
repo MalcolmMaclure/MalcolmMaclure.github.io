@@ -1,9 +1,3 @@
-**Table of Contents**
-
-[TOCM]
-
-[TOC]
-
 # Setting up a Development Environment
 
 ## Downloading and configuring required software
