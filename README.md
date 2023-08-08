@@ -34,10 +34,6 @@
 		![](https://malcolmmaclure.github.io/readme_img/triple_ok.jpg)
 
 ## Creating a Development Environment
-1. Something
-  1. Something
-  2. Something
-2. Something
 1. Open Docker Desktop and navigate to `Dev Environments`
 
 ![](https://malcolmmaclure.github.io/readme_img/click_dev_environments.jpg)
@@ -48,6 +44,7 @@
 
 ![](https://malcolmmaclure.github.io/readme_img/click_get_started.jpg)
 4. Fill out the setup info
+	
 	1. The `Name` field can be left blank.
 	2. Under `Choose source` select `Existing Git Repo`, and fill in the field with https://github.com/MalcolmMaclure/MalcolmMaclure.github.io.git
 	3. Under `Choose IDE` select `Other` then click the select button and navigate to an empty folder where you'd like to store the files for the site.
