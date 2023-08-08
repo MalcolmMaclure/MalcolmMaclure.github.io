@@ -70,6 +70,25 @@
 8. You should now be able to see the site by going to any web-browser and entering `localhost:8000` into the address bar.
 9. All the images and HTML files for the site will have been downloaded into the empty folder you chose in step 4, and any changes you make to those files will imediately be reflected on localhost:8000.
 
+# Commiting Changes
+
+One of the files in the root folder for the website is called `commit_changes.sh`.
+Double-clicking on this file will automatically commit any changes you have made and upload them to the live site at MalcolmMaclure.github.io.
+It will take 5-10 minutes for the changes to show up.
+
+# A brief intro to debugging
+
+If you ever make a change that completely breaks the site, the most likely cause will be a missplaced comma or bracket in /articles/directory.json.
+Hunting down syntax errors like that can be a pain, but fortunately there are some tools to help you.
+When you open the `inspect` tool for the website, you'll notice that it has multiple tabs at the top. 
+If you click on the `console` tab, if anything has gone wrong you'll get a list of errors.
+
+![](https://malcolmmaclure.github.io/readme_img/intro_debug.jpg)
+The very first error is usually the important one, and in general you'll be looking for a message that mentions `JSON`.
+You'll note the error tells you exactly where in the file to look for an error: line 17, column 3.
+Do keep in mind that that these error messages (especially when they are pointing to a column early in a line) are actually a result of a problem at the end of the previous line.
+In the case of the screenshot, this was indeed the case, and there was a missing comma at the end of line 16.
+
 # Content Management
 
 There are a lot of files, and a bunch of code on this page, but it is possible to manage this site by exclusively interacting with the contents of /articles and /img.
@@ -108,25 +127,6 @@ Link | Description
 https://getbootstrap.com/docs/5.0/examples/cheatsheet/ | For a reasonably exhaustive list of styling options. To recreate any element on this page, right click on it and select `inspect`. A new window will open showing the HTML for the page, with the line that creates the element you clicked on highlighted. Right click on the highlighted line and select copy --> outer HTML and you'll be able to paste that line into an HTML file.
 https://getbootstrap.com/docs/4.0/utilities/spacing/ | For an explanation of classes that affect spacing
 https://getbootstrap.com/docs/4.0/utilities/sizing/ | For an explanation of classes that affect sizing
-
-# Commiting Changes
-
-There are two files in the root folder of the website called `commit_changes_windows.bat` and `commit_changes_mac.sh`.
-Double-clicking on the file that is appropriate to your opperating system will automatically commit any changes you have made and upload them to the live site at MalcolmMaclure.github.io.
-It will take 5-10 minutes for the changes to show up.
-
-# A brief intro to debugging
-
-If you ever make a change that completely breaks the site, the most likely cause will be a missplaced comma or bracket in /articles/directory.json.
-Hunting down syntax errors like that can be a pain, but fortunately there are some tools to help you.
-When you open the `inspect` tool for the website, you'll notice that it has multiple tabs at the top. 
-If you click on the `console` tab, if anything has gone wrong you'll get a list of errors.
-
-![](https://malcolmmaclure.github.io/readme_img/intro_debug.jpg)
-The very first error is usually the important one, and in general you'll be looking for a message that mentions `JSON`.
-You'll note the error tells you exactly where in the file to look for an error: line 17, column 3.
-Do keep in mind that that these error messages (especially when they are pointing to a column early in a line) are actually a result of a problem at the end of the previous line.
-In the case of the screenshot, this was indeed the case, and there was a missing comma at the end of line 16.
 
 # TODO
 
