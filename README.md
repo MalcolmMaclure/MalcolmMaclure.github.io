@@ -49,7 +49,7 @@
 	3. Under `Choose IDE` select `Other` then click the select button and navigate to an empty folder where you'd like to store the files for the site.
 	4. Click `Continue`.
 	
-	![](https://malcolmmaclure.github.io/readme_img/fill_out_setup.jpg)
+![](https://malcolmmaclure.github.io/readme_img/fill_out_setup.jpg)
 5. Docker Desktop will start setting up your Development Environment. You'll see a bunch of commands scroll by for a while. When it's done, click `continue`.
 
 ![](https://malcolmmaclure.github.io/readme_img/this_may_take_a_sec.jpg)
