@@ -34,6 +34,10 @@
 		![](https://malcolmmaclure.github.io/readme_img/triple_ok.jpg)
 
 ## Creating a Development Environment
+1. Something
+  1. Something
+  2. Something
+2. Something
 1. Open Docker Desktop and navigate to `Dev Environments`
 
 ![](https://malcolmmaclure.github.io/readme_img/click_dev_environments.jpg)
