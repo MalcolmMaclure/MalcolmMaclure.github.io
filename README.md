@@ -111,8 +111,8 @@ https://getbootstrap.com/docs/4.0/utilities/sizing/ | For an explanation of clas
 
 # Commiting Changes
 
-One of the files in the root folder for the website is called `commit_changes_windows.bat`.
-Double-clicking on this file will automatically commit any changes you have made and upload them to the live site at MalcolmMaclure.github.io.
+There are two files in the root folder of the website called `commit_changes_windows.bat` and `commit_changes_mac.sh`.
+Double-clicking on the file that is appropriate to your opperating system will automatically commit any changes you have made and upload them to the live site at MalcolmMaclure.github.io.
 It will take 5-10 minutes for the changes to show up.
 
 # A brief intro to debugging
