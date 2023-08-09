@@ -1,3 +1,12 @@
+- [Setting up a Development Environment](#setting-up-a-development-environment)
+  * [Downloading and configuring required software](#downloading-and-configuring-required-software)
+  * [Creating a Development Environment](#creating-a-development-environment)
+- [Commiting Changes](#commiting-changes)
+- [A brief intro to debugging](#a-brief-intro-to-debugging)
+- [Content Management](#content-management)
+  * [HTML resourses](#html-resourses)
+- [TODO](#todo)
+
 # Setting up a Development Environment
 
 ## Downloading and configuring required software
@@ -103,7 +112,7 @@ To edit the about page text, edit articles/about.html.
 
 To edit Address, Phone, and Email on the about page, edit articles/directory.json Find `Contact`, and edit the text in line with each label (Adress, Phone, Email) being sure to suround the text with quotes ("").
 
-To add new images that can be used on any page, upload them to /img. Once uploaded, put `<img class="img-fluid" src="/img/{name_of_img}"></img>` to display that image. Additional classes can be added to adjust size and spacing, eg `<img class="img-fluid **w-50**" src="/img/{name_of_img}"></img>` will make the image half the width of the page. See [HTML resources](HTML resources) for explanation of these classes.
+To add new images that can be used on any page, upload them to /img. Once uploaded, put `<img class="img-fluid" src="/img/{name_of_img}"></img>` to display that image. Additional classes can be added to adjust size and spacing, eg `<img class="img-fluid **w-50**" src="/img/{name_of_img}"></img>` will make the image half the width of the page. See [HTML resources](https://github.com/MalcolmMaclure/MalcolmMaclure.github.io#html-resourses) for explanation of these classes.
 
 Take note of some special image names:
 
