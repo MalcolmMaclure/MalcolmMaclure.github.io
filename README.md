@@ -58,6 +58,7 @@
 
 ![](https://malcolmmaclure.github.io/readme_img/done.jpg)
 7. Navigate back to the `Containers` tab to see the process that runs the website. 
+
 	1. It should show a status of `Running (1/1)`. This means its working.
 	2. Whenever you shut down your computer, this local site will shut down, and you'll have to open Docker Desktop, and click the start button to start it back up.
 	
