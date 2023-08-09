@@ -1,3 +1,5 @@
+**Table of Contents**
+
 - [Setting up a Development Environment](#setting-up-a-development-environment)
   * [Downloading and configuring required software](#downloading-and-configuring-required-software)
   * [Creating a Development Environment](#creating-a-development-environment)
