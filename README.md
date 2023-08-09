@@ -61,7 +61,7 @@
 		
 		![](https://malcolmmaclure.github.io/readme_img/start_container.jpg)
 8. You should now be able to see the site by going to any web-browser and entering `localhost:8000` into the address bar.
-9. All the images and HTML files for the site will have been downloaded into the empty folder you chose in step 4, and any changes you make to those files will imediately be reflected on localhost:8000.
+9. All the images and HTML files for the site will have been downloaded into the empty folder you chose in step 4, and any changes you make to those files will imediately be reflected on `localhost:8000`.
 
 # Commiting Changes
 
