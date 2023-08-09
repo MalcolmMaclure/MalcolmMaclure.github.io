@@ -34,33 +34,19 @@
 		![](https://malcolmmaclure.github.io/readme_img/triple_ok.jpg)
 
 ## Creating a Development Environment
-1. Open Docker Desktop and navigate to `Dev Environments`
-
-![](https://malcolmmaclure.github.io/readme_img/click_dev_environments.jpg)
-2. Create a new environment
-
-![](https://malcolmmaclure.github.io/readme_img/click_create_new_environment.jpg)
-3. Click `Get Started`
-
-![](https://malcolmmaclure.github.io/readme_img/click_get_started.jpg)
+1. Open Docker Desktop and navigate to `Dev Environments` ![](https://malcolmmaclure.github.io/readme_img/click_dev_environments.jpg)
+2. Create a new environment ![](https://malcolmmaclure.github.io/readme_img/click_create_new_environment.jpg)
+3. Click `Get Started` ![](https://malcolmmaclure.github.io/readme_img/click_get_started.jpg)
 4. Fill out the setup info
-	+ The `Name` field can be left blank.
-	+ Under `Choose source` select `Existing Git Repo`, and fill in the field with `https://github.com/MalcolmMaclure/MalcolmMaclure.github.io.git`
-	+ Under `Choose IDE` select `Other` then click the select button and navigate to an empty folder where you'd like to store the files for the site.
-	+ Click `Continue`.
-	
-![](https://malcolmmaclure.github.io/readme_img/fill_out_setup.jpg)
-5. Docker Desktop will start setting up your Development Environment. You'll see a bunch of commands scroll by for a while. When it's done, click `continue`.
-
-![](https://malcolmmaclure.github.io/readme_img/this_may_take_a_sec.jpg)
-6. Click `Done`
-
-![](https://malcolmmaclure.github.io/readme_img/done.jpg)
+	1. The `Name` field can be left blank.
+	2. Under `Choose source` select `Existing Git Repo`, and fill in the field with `https://github.com/MalcolmMaclure/MalcolmMaclure.github.io.git`
+	3. Under `Choose IDE` select `Other` then click the select button and navigate to an empty folder where you'd like to store the files for the site.
+	4. Click `Continue`. ![](https://malcolmmaclure.github.io/readme_img/fill_out_setup.jpg)
+5. Docker Desktop will start setting up your Development Environment. You'll see a bunch of commands scroll by for a while. When it's done, click `continue`. ![](https://malcolmmaclure.github.io/readme_img/this_may_take_a_sec.jpg)
+6. Click `Done` ![](https://malcolmmaclure.github.io/readme_img/done.jpg)
 7. Navigate back to the `Containers` tab to see the process that runs the website. 
-	+ It should show a status of `Running (1/1)`. This means its working.
-	+ Whenever you shut down your computer, this local site will shut down, and you'll have to open Docker Desktop, and click the start button to start it back up.
-	
-![](https://malcolmmaclure.github.io/readme_img/start_container.jpg)
+	1. It should show a status of `Running (1/1)`. This means its working.
+	2. Whenever you shut down your computer, this local site will shut down, and you'll have to open Docker Desktop, and click the start button to start it back up. ![](https://malcolmmaclure.github.io/readme_img/start_container.jpg)
 8. You should now be able to see the site by going to any web-browser and entering `localhost:8000` into the address bar.
 9. All the images and HTML files for the site will have been downloaded into the empty folder you chose in step 4, and any changes you make to those files will imediately be reflected on localhost:8000.
 
