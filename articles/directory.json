@@ -1,18 +1,18 @@
-ing {
+{
 	"carousel": [
-		{"file_name": "template", "title": "Case-crossover study design", "img": "/img/Case-crossover car crash rectangle.jpg"},
+		{"file_name": "CCO definition", "title": "Case-crossover study design", "img": "/img/Case-crossover car crash rectangle.jpg"},
 		{"file_name": "template", "title": "My Climate Clan", "img": "/img/My Climate Clan grid.jpg"},
 		{"file_name": "Meeting Wisely", "title": "Meeting Wisely", "img": "/img/IACTE logo for carousel2.jpg"}
 	],
 
 	"article_stubs": [
-		{"file_name": "template", "title": "Case-crossover design", "intro": "Cases serve as their own controls.", "img": "/img/Case-crossover car crash rectangle.jpg"},
+		{"file_name": "CCO definition", "title": "Case-crossover design", "intro": "Cases serve as their own controls.", "img": "/img/Case-crossover car crash rectangle.jpg"},
 		{"file_name": "template", "title": "Scientific Social Action", "intro": "Extending Gandhi's 'Satyagraha' Experiments", "img": "/img/My Climate Clan grid.jpg"},
 		{"file_name": "Meeting Wisely", "title": "Meeting Wisely", "intro": "Boosting low-carbon virtual travel.", "img": "/img/IACTE logo for carousel2.jpg"}
 	],
 
 	"navbar": [
-		{"file_name": "template", "title": "Case-crossover"},
+		{"file_name": "CCO definition", "title": "Case-crossover"},
 		{"file_name": "template", "title": "Climate Action"},
 		{"file_name": "Meeting Wisely", "title": "Meeting Wisely"}
 	],
