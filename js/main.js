@@ -48,6 +48,15 @@ function GetURLParameter(sParam)
 	$.holdReady(true);
 	$.getJSON( "/articles/directory.json", function(json) {
 		directory = json;
+		directory['navbar'] = [];
+		for (const def of directory['carousel']) {
+			directory['navbar'].push({file_name: def.file_name, title: def.title})
+		}
+		for (const def of directory['article_stubs']) {
+			if (!directory['navbar'].find(o => o.file_name === def.file_name)) {
+				directory['navbar'].push({file_name: def.file_name, title: def.title})
+			}
+		}
 	}).fail(function( jqxhr, textStatus, error ) {
 		var err = textStatus + ", " + error;
 		console.log( "Request Failed: " + err );
@@ -81,8 +90,17 @@ function GetURLParameter(sParam)
 		$('#about').load('/articles/about.html');
 
 		if (GetURLParameter('article') != null) {
-			$('#article-title, #article-title-breadcrumb').text(directory['navbar'].find(o => o.file_name === GetURLParameter('article')).title);
-			$('#article').load('/articles/' + GetURLParameter('article') + '.html');
+			const fileName = GetURLParameter('article')
+			var fileNameExt = fileName
+			if (!fileName.endsWith('.html')) {
+				fileNameExt += '.html'
+			}
+			var item = directory['navbar'].find(o => o.file_name === fileName || o.file_name === fileNameExt)
+			if (item) {
+				$('#article-title, #article-title-breadcrumb').text(item.title);
+				
+			}
+			$('#article').load('/articles/' + fileNameExt);
 		}
 
 		$('#carousel-content').html(directory['carousel'].map(carouselItem).join(''));
