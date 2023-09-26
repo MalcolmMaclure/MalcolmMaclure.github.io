@@ -101,14 +101,13 @@ To add new pages on topics of interest, create HTML files in /articles. articles
 
 To display the contents of HTML files in /articles in the navigation bar on all pages, the carousel on the home page, or the list of articles below the carousel on the home page, edit articles/directory.json.
 
-For the navigation bar, find `"navbar": \[` and add this line directy below it:
-> {"file_name": "`name of file in /articles, no file extension`", "title": "`Text to appear in the navigation bar`"}, |
-
 For the carousel, find `"carousel": \[` and add this line directy below it:
 > {"file_name": "`name of file in /articles, no file extension`", "title": "`Text to appear in the navigation bar`", "img": "/img/`name of image in /img, including file extension`"},
 
 For the list of articles, find `"article_stubs": \[` and add this line directy below it:
 > {"file_name": "`name of file in /articles, no file extension`", "title": "`Text to appear in the navigation bar`", "img": "/img/`name of image in /img, including file extension`", "intro": "`The blurb that should introduce the article on the home page`"},
+
+For the navigation bar, any entry in either the carousel or the article_stubs will be added as a link in the navbar.
 
 To edit the about page text, edit articles/about.html.
 

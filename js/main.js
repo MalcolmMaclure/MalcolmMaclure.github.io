@@ -81,13 +81,7 @@ function GetURLParameter(sParam)
 				}
 			});
 		});
-		$('#sidebar').load('/sidebar.html');
 		$('#footer').load('/footer.html');
-
-		$('#about-address').html(directory.contact.address);
-		$('#about-phone').html(directory.contact.phone);
-		$('#about-email').html(directory.contact.email);
-		$('#about').load('/articles/about.html');
 
 		if (GetURLParameter('article') != null) {
 			const fileName = GetURLParameter('article')

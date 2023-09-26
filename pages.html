@@ -22,8 +22,6 @@
 
 	<body>
 		<div class="wrapper">
-			<div id="sidebar" class="sidebar">
-			</div>
 			<div class="content">
 				<!-- Navbar Start -->
 				<div id="navbar" class="container p-0">
@@ -34,7 +32,9 @@
 				<div class="container py-2 px-4 bg-primary">
 					<div class="row py-1 px-4">
 						<div class="col-sm-6 text-center text-md-left">
-							<h3 id="article-title" class="mb-3 mb-md-0 text-white text-uppercase font-weight-bold"></h3>
+                            <div class="d-inline-flex pt-2">
+								<h3 id="article-title" class="mb-3 mb-md-0 text-white text-uppercase font-weight-bold"></h3>
+							</div>
 						</div>
 						<div class="col-sm-3 text-center text-md-right">
 							<div class="d-inline-flex pt-2">
@@ -42,7 +42,7 @@
 								<h5 class="m-0 text-white px-0">/</h5>
 								<h5 class="m-0 text-white"><a class="text-white" href="">Pages</a></h5>
 								<h5 class="m-0 text-white px-0">/</h5>
-								<h8 id="article-title-breadcrumb" class="m-0 text-white"></h8>
+								<p id="article-title-breadcrumb" class="m-0 text-white"></p>
 							</div>
 						</div>
 					</div>
@@ -78,7 +78,7 @@
 		<script src="/mail/jqBootstrapValidation.min.js"></script>
 		<script src="/mail/contact.js"></script>
 
-		<!-- Template Javascript -->
-		<script src="/js/main.js"></script>
+        <!-- Template Javascript -->
+        <script src="/js/main.js" type="module"></script>
 	</body>
 </html>
