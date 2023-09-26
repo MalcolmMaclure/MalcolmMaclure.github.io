@@ -5,8 +5,9 @@
   * [Creating a Development Environment](#creating-a-development-environment)
 - [Commiting Changes](#commiting-changes)
 - [A brief intro to debugging](#a-brief-intro-to-debugging)
-- [Content Management](#content-management)
-  * [HTML resourses](#html-resourses)
+- [Image Management](#image-management)
+- [Article Management](#article-management)
+- [HTML resourses](#html-resourses)
 - [TODO](#todo)
 
 # Setting up a Development Environment
@@ -93,25 +94,7 @@ You'll note the error tells you exactly where in the file to look for an error: 
 Do keep in mind that that these error messages (especially when they are pointing to a column early in a line) are actually a result of a problem at the end of the previous line.
 In the case of the screenshot, this was indeed the case, and there was a missing comma at the end of line 16.
 
-# Content Management
-
-There are a lot of files, and a bunch of code on this page, but it is possible to manage this site by exclusively interacting with the contents of /articles and /img.
-
-To add new pages on topics of interest, create HTML files in /articles. articles/template.html exists to give an example of what an HTML file should look like.
-
-To display the contents of HTML files in /articles in the navigation bar on all pages, the carousel on the home page, or the list of articles below the carousel on the home page, edit articles/directory.json.
-
-For the carousel, find `"carousel": \[` and add this line directy below it:
-> {"file_name": "`name of file in /articles, no file extension`", "title": "`Text to appear in the navigation bar`", "img": "/img/`name of image in /img, including file extension`"},
-
-For the list of articles, find `"article_stubs": \[` and add this line directy below it:
-> {"file_name": "`name of file in /articles, no file extension`", "title": "`Text to appear in the navigation bar`", "img": "/img/`name of image in /img, including file extension`", "intro": "`The blurb that should introduce the article on the home page`"},
-
-For the navigation bar, any entry in either the carousel or the article_stubs will be added as a link in the navbar.
-
-To edit the about page text, edit articles/about.html.
-
-To edit Address, Phone, and Email on the about page, edit articles/directory.json Find `Contact`, and edit the text in line with each label (Adress, Phone, Email) being sure to suround the text with quotes ("").
+# Image Management
 
 To add new images that can be used on any page, upload them to /img. Once uploaded, put `<img class="img-fluid" src="/img/{name_of_img}"></img>` to display that image. Additional classes can be added to adjust size and spacing, eg `<img class="img-fluid **w-50**" src="/img/{name_of_img}"></img>` will make the image half the width of the page. See [HTML resources](https://github.com/MalcolmMaclure/MalcolmMaclure.github.io#html-resourses) for explanation of these classes.
 
@@ -122,8 +105,26 @@ Image File Name | Description
 profile.jpg | The picture that appears on the left of every page.
 favicon.ico | The small image that appears in the browser tab.
 
+# Article Management
 
-## HTML resourses
+To add a new article to the site, create an .html file in /articles, and run `update_articles_directory.bat`
+Running `update_articles_directory.bat` should be as simple as locating it in file explorer and double-clicking it.
+When you do this, a window should open briefly and then immediatly close. You'll know it worked if, when you refresh the local version of your webpage, a new link appears under "Pages" in the nav-bar.
+This link will may have no text depending on the contents of the new .html file you just created.
+
+This html file should define a series of `<meta>` tags as follows:
+
+```
+<meta name="title" content="{This text will be the header in the carousel or article stub list and the name navbar}">
+<meta name="intro" content="{For the carousel and article stubs this text will be displayed in a smaller font below the header}">
+<meta name="img" content="{The filepath to an image that will be used for the carousel or article stub}">
+<meta name="carousel_priority" content="{A number from 0 - infinity. The smaller this number, the earlier this article will appear in the carousel. If this meta tag is ommited, this article will not appear in the carousel}">
+<meta name="article_priority" content="{A number from 0 - infinity. The smaller this number, the earlier this article will appear in the list of articles. If this meta tag is ommited, this article will not appear in the list of articles}"">
+```
+
+Aside from these meta tags, the contents of html files in /articles should just be standard HTML, designed to be injected into the `<div id="article">` on pages.html.
+
+# HTML resourses
 
 Link | Description
 ------------- | -------------
