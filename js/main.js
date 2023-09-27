@@ -2,11 +2,12 @@ const navLink = ({ file_name, title }) => `
 <a href="/pages.html?article=${file_name}" class="dropdown-item">${title}</a>
 `;
 
-const carouselItem = ({file_name, img, title}) => `
+const carouselItem = ({file_name, img, title, intro}) => `
 <div class="carousel-item">
 	<img class="w-100" src="${img}" alt="Image">
 	<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
 		<h2 class="text-white font-weight-bold">${title}</h2>
+		<h4 class="text-white">${intro}</h4>
 		<a href="/pages.html?article=${file_name}" class="btn btn-lg btn-outline-light mt-4">Read More</a>
 	</div>
 </div>
@@ -44,17 +45,60 @@ function GetURLParameter(sParam)
 (function ($) {
     "use strict";
 
-	var directory = {};
+	var directory = {
+		"carousel": [],
+		"article_stubs": [],
+		"navbar": []
+	};
 	$.holdReady(true);
-	$.getJSON( "/articles/directory.json", function(json) {
-		directory = json;
-		directory['navbar'] = [];
-		for (const def of directory['carousel']) {
-			directory['navbar'].push({file_name: def.file_name, title: def.title})
-		}
-		for (const def of directory['article_stubs']) {
-			if (!directory['navbar'].find(o => o.file_name === def.file_name)) {
-				directory['navbar'].push({file_name: def.file_name, title: def.title})
+
+	$.getJSON( "/js/directory.json", function(json) {
+		for (const article of json) {
+			if (article.endsWith(".html")) {
+				$.ajax({
+					url: "/articles/" + article,
+					success: function( data ) {
+						var title = $(data).filter("meta[name='title']").attr("content");
+						var img = $(data).filter("meta[name='img']").attr("content");
+						var intro = $(data).filter("meta[name='intro']").attr("content");
+						var carousel_priority = $(data).filter("meta[name='carousel_priority']").attr("content");
+						var article_priority = $(data).filter("meta[name='article_priority']").attr("content");
+
+						if (carousel_priority >= 0) {
+							var carousel_stub = {
+								"file_name": article,
+								"title": title,
+								"intro": intro,
+								"img": img,
+							}
+
+							if (directory["carousel"] == undefined) {
+								directory["carousel"][carousel_priority] = carousel_stub
+							} else {
+								directory["carousel"].push(carousel_stub)
+							}
+						}
+
+						if (article_priority >= 0) {
+							var article_stub = {
+								"file_name": article,
+								"title": title,
+								"intro": intro,
+								"img": img,
+							}
+
+							if (directory["article"] == undefined) {
+								directory["article_stubs"][article_priority] = article_stub
+							} else {
+								directory["article_stubs"].push(article_stub)
+							}
+						}
+
+						directory['navbar'].push({"file_name": article, "title": title})
+					},
+					async: false,
+					cache: false,
+				})
 			}
 		}
 	}).fail(function( jqxhr, textStatus, error ) {
@@ -81,13 +125,7 @@ function GetURLParameter(sParam)
 				}
 			});
 		});
-		$('#sidebar').load('/sidebar.html');
 		$('#footer').load('/footer.html');
-
-		$('#about-address').html(directory.contact.address);
-		$('#about-phone').html(directory.contact.phone);
-		$('#about-email').html(directory.contact.email);
-		$('#about').load('/articles/about.html');
 
 		if (GetURLParameter('article') != null) {
 			const fileName = GetURLParameter('article')

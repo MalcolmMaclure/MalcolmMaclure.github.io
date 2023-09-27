@@ -1,3 +1,2 @@
-git add --all
-git commit -m "automated commit"
-git push
+call update_articles_directory.bat
+call handle_git.bat
