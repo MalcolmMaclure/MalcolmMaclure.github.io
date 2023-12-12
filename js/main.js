@@ -162,6 +162,9 @@ function GetURLParameter(sParam)
         }
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
+
+		$('[data-toggle="popover"]').popover({container: "body"})
+
     });
 
     // Skills

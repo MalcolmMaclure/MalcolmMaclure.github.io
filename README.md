@@ -7,6 +7,7 @@
 - [A brief intro to debugging](#a-brief-intro-to-debugging)
 - [Image Management](#image-management)
 - [Article Management](#article-management)
+- [Popups](#popups)
 - [HTML resourses](#html-resourses)
 - [TODO](#todo)
 
@@ -124,6 +125,43 @@ This html file should define a series of `<meta>` tags as follows:
 
 Aside from these meta tags, the contents of html files in /articles should just be standard HTML, designed to be injected into the `<div id="article">` on pages.html.
 
+# Popups
+
+To add popups to an element, add the following attributes to it:
+
+```
+data-toggle="popover"
+data-placement="top|bottom|left|right"
+data-trigger="click|focus|hover"
+
+data-title="whatever text you would like"
+data-content="whatever text you would like"
+```
+
+For example, if you had a link that looked like this:
+
+```
+<a>some link</a>
+```
+
+You could add a popup (with the title "Link" and the help text "If you click this it will change what page you're looking at") with the following code
+
+```
+<a data-toggle="popover" data-placement="right" data-trigger="hover" data-title="Link" data-content="If you click this it will change what page you're looking at">some link</a>
+```
+
+To explain each of these in more detail:
+
+Attribute | Possible Values | Description and usage
+------------- | ------------- | -------------
+data-toggle | popover | If you want a popup on an element, include this attribute with this Values
+data-placement | top, bottom, right, left | If set to top, the popup will appear above the element. If set to bottom, will appear below, etc. If there isn't room for the popup wherever it's supposed to appear, it will appear on the opposite side instead.
+data-trigger | click, focus, hover | If set to click, then the user will have to click on the element to see the popup (and click again to dismiss it). If set to hover, they will see the popup while their cursor is over the element. If set to focus, should mostly behave like click except that clicking anywhere else will dismiss the popup, though this is the most complex option and it may sometimes behave strangely.
+data-title | | Popups will be split into two halves, one on top with a darker background and slightly larger text, and one below. Text added to the title will appear in the top half. If no title is included, the top half won't appear at all.
+data-content | | Text in this attribute will appear in the bottom half of the popup.
+
+More information in the Popups link under HTML resources(#html-resourses)
+
 # HTML resourses
 
 Link | Description
@@ -131,6 +169,7 @@ Link | Description
 https://getbootstrap.com/docs/5.0/examples/cheatsheet/ | For a reasonably exhaustive list of styling options. To recreate any element on this page, right click on it and select `inspect`. A new window will open showing the HTML for the page, with the line that creates the element you clicked on highlighted. Right click on the highlighted line and select copy --> outer HTML and you'll be able to paste that line into an HTML file.
 https://getbootstrap.com/docs/4.0/utilities/spacing/ | For an explanation of classes that affect spacing
 https://getbootstrap.com/docs/4.0/utilities/sizing/ | For an explanation of classes that affect sizing
+https://getbootstrap.com/docs/4.0/components/popovers/ | Popups in detail
 
 # TODO
 
